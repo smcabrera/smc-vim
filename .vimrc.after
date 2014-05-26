@@ -1,0 +1,18 @@
+:set relativenumber
+
+"Some options for colors--uncomment the one you want to use
+"color molokai
+"color pyte
+"color jellybeans
+"color railscasts
+
+"color cobalt
+
+:imap jk <Esc>
+
+"removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+:set shiftwidth=2
+" Press space to clear search highlighting and any message already displayed
+nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
