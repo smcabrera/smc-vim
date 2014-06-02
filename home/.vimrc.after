@@ -1,12 +1,14 @@
 :set relativenumber
 
-"Some options for colors--uncomment the one you want to use
-"color molokai
-"color pyte
-"color jellybeans
-"color railscasts
+"These colors don't seem to work...
+"colorscheme Tomorrow
 
-"color cobalt
+"Some options for colors--uncomment the one you want to use
+
+"colorscheme jellybeans
+"colorscheme Tomorrow-Night-Bright
+"colorscheme Tomorrow-Night-Eighties
+colorscheme desert
 
 :imap jk <Esc>
 
@@ -16,3 +18,7 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 :set shiftwidth=2
 " Press space to clear search highlighting and any message already displayed
 nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
+
+" Auto change the directory to the current file I'm working on
+autocmd BufEnter * lcd %:p:h
+
