@@ -18,7 +18,8 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 :set shiftwidth=2
 " Press space to clear search highlighting and any message already displayed
 nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
+" Remap FixWhitespace to just :fw
+nnoremap :fw :FixWhitespace
 
 " Auto change the directory to the current file I'm working on
 autocmd BufEnter * lcd %:p:h
-
