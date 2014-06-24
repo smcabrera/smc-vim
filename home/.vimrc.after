@@ -22,3 +22,21 @@ nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
 " Auto change the directory to the current file I'm working on
 autocmd BufEnter * lcd %:p:h
 
+
+" Making things easier for writing
+
+" not to break on words
+:set wrap
+:set formatoptions=l
+:set linebreak
+:set nolist
+:set breakat=\ |@-+;:,./?^I
+" :set foldcolumn=7
+
+" fixing up moving line by line in the paragraph
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
+
